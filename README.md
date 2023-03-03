@@ -59,3 +59,5 @@ We compare the performance of the basic method, Nereus, and BiStream. The basic 
 < img src="https://github.com/CGCL-codes/Auxo/blob/main/imgs/nodein_f.png" width="200" height="150" alt="Proportional incremental strategy"/>
 < img src="https://github.com/CGCL-codes/Auxo/blob/main/imgs/nodeout_f.png" width="200" height="150" alt="Proportional incremental strategy"/><br/>
 </div>
+ 
+ 
