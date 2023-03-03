@@ -58,7 +58,7 @@ Running
 # Evaluation Result
 Here, we show the result on dataset of the real-world DiDi Chuxing gaia initiative.
 
-We compare the performance of the basic method, Nereus, and BiStream. The basic method employs join-biclique model and static range partitioning. The basic method allocates a partition in an instance. For Nereus, we adopt adaptive range partitioning. By default, we initialize the number of partitions in each instance to three. 
+We compare the performance of the basic method, Nereus, and BiStream. The basic method employs join-biclique model and static range partitioning. The basic method allocates a partition in an instance. For Nereus, we adopt adaptive range partitioning. By default, we initialize the number of partitions in each instance to three. We compare the throughput and processing latency of the basic method, Nereus, and BiStream systems, and collect the values in four primary metrics across Nereus runs. The metrics include the load, $LI$, the diameter of the partition connection network, and the number of partitions.
 
 <div align=center>
 <img src="https://github.com/shuiying1037/Nereus/blob/main/src/main/resources/throughput-4700032000.png" width="200" height="150" alt="Proportional incremental strategy"/>
