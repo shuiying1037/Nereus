@@ -31,7 +31,9 @@ We have two insights for the two schemes. First, the disadvantage's influences o
 ## Migration Benefit Model
 ![image](https://user-images.githubusercontent.com/53924951/222684293-d09675eb-7cb7-4967-ac88-c598d2f1a919.png)
 
-$B=B_n+B_l$
+The tatol benefit: $B=B_n+B_l$
+
+# About the source code and data sets
 
 ## Building Nereus
 
@@ -44,4 +46,16 @@ Nereus source code is maintained using [Maven](http://maven.apache.org/). Genera
 Nereus is built on top of [Storm](https://storm.apache.org/). After deploying a Storm cluster, you can launch BiStream by submitting its jar to the cluster. Please refer to Storm documents for how to [set up a Storm cluster](https://storm.apache.org/documentation/Setting-up-a-Storm-cluster.html) and [run topologies on a Storm cluster](https://storm.apache.org/documentation/Running-topologies-on-a-production-cluster.html).
 Running 
 
-    storm jar /home/join/Nereus/target/Nereus-1.0-SNAPSHOT.jar soj.biclique.KafkaTopology -n 40 -ks 1 -pr 100 -ps 100 -f1 4 -f2 4  -infile sorted_20161101  -wr 40000 -ws 40000 -tr 46000 -ts 46000 --s band -t 2 -nps 3 -ns 600 -mig -jump -conti -e1 50 -e2 50   
+    storm jar /home/join/Nereus/target/Nereus-1.0-SNAPSHOT.jar soj.biclique.KafkaTopology -n 40 -ks 1 -pr 100 -ps 100 -f1 4 -f2 4  -infile sorted_20161101  -wr 40000 -ws 40000 -tr 46000 -ts 46000 --s band -t 2 -nps 3 -ns 600 -mig -jump -conti -e1 50 -e2 50 
+    
+# Evaluation Result
+Here, we show the result on dataset of the real-world DiDi Chuxing gaia initiative.
+
+We compare the performance of the basic method, Nereus, and BiStream. The basic method employs join-biclique model and static range partitioning. The basic method allocates a partition in an instance. For Nereus, we adopt adaptive range partitioning. By default, we initialize the number of partitions in each instance to three. 
+
+<div align=center>
+< img src="https://github.com/CGCL-codes/Auxo/blob/main/imgs/insert_f.png" width="200" height="150" alt="Proportional incremental strategy"/>
+< img src="https://github.com/CGCL-codes/Auxo/blob/main/imgs/edge_f.png" width="200" height="150" alt="Proportional incremental strategy"/>
+< img src="https://github.com/CGCL-codes/Auxo/blob/main/imgs/nodein_f.png" width="200" height="150" alt="Proportional incremental strategy"/>
+< img src="https://github.com/CGCL-codes/Auxo/blob/main/imgs/nodeout_f.png" width="200" height="150" alt="Proportional incremental strategy"/><br/>
+</div>
