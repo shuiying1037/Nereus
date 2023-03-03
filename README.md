@@ -54,10 +54,10 @@ Here, we show the result on dataset of the real-world DiDi Chuxing gaia initiati
 We compare the performance of the basic method, Nereus, and BiStream. The basic method employs join-biclique model and static range partitioning. The basic method allocates a partition in an instance. For Nereus, we adopt adaptive range partitioning. By default, we initialize the number of partitions in each instance to three. 
 
 <div align=center>
-<img src="https://github.com/shuiying1037/Nereus/blob/main/src/main/resources/latency-47000.png" width="200" height="150" alt="Proportional incremental strategy"/>
-<img src="https://github.com/shuiying1037/Nereus/blob/main/src/main/resources/latency-47000.png" width="200" height="150" alt="Proportional incremental strategy"/>
-<img src="https://github.com/shuiying1037/Nereus/blob/main/src/main/resources/latency-47000.png" width="200" height="150" alt="Proportional incremental strategy"/>
-<img src="hhttps://github.com/shuiying1037/Nereus/blob/main/src/main/resources/latency-47000.png" width="200" height="150" alt="Proportional incremental strategy"/><br/>
+<img src="https://github.com/shuiying1037/Nereus/blob/main/src/main/resources/throughput-4700032000.png" width="200" height="150" alt="Proportional incremental strategy"/>
+<img src="https://github.com/shuiying1037/Nereus/blob/main/src/main/resources/latency-4700032000.png" width="200" height="150" alt="Proportional incremental strategy"/>
+<img src="https://github.com/shuiying1037/Nereus/blob/main/src/main/resources/throughput-47000.png" width="200" height="150" alt="Proportional incremental strategy"/>
+<img src="https://github.com/shuiying1037/Nereus/blob/main/src/main/resources/latency-47000.png" width="200" height="150" alt="Proportional incremental strategy"/><br/>
 </div>
  
  
