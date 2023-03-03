@@ -29,12 +29,12 @@ We have two insights for the two schemes. First, the disadvantage's influences o
 # Adaptive Range Partitioning
 ## The four migration operations
 <div align=center>
-<img src="https://github.com/shuiying1037/Nereus/blob/main/src/main/resources/migrationschemes.png" width="300" height="450" alt="Proportional incremental strategy"/>
+<img src="https://github.com/shuiying1037/Nereus/blob/main/src/main/resources/migrationschemes.png" width="400" height="450" alt="Proportional incremental strategy"/>
 </div>
 
 ## Migration Benefit Model
 <div align=center>
-<img src="https://github.com/shuiying1037/Nereus/blob/main/src/main/resources/router-instance.png" width="600" height="400" alt="Proportional incremental strategy"/>
+<img src="https://github.com/shuiying1037/Nereus/blob/main/src/main/resources/router-instance.png" width="300" height="250" alt="Proportional incremental strategy"/>
 </div>
 
 The tatol benefit: $B=B_n+B_l$
