@@ -33,11 +33,12 @@ We have two insights for the two schemes. First, the disadvantage's influences o
 </div>
 
 ## Migration Benefit Model
-<div align=center>
-<img src="https://github.com/shuiying1037/Nereus/blob/main/src/main/resources/router-instance.png" width="300" height="250" alt="Proportional incremental strategy"/>
-</div>
 
 The tatol benefit: $B=B_n+B_l$
+
+<div align=center>
+<img src="https://github.com/shuiying1037/Nereus/blob/main/src/main/resources/router-instance.png" width="400" height="250" alt="Proportional incremental strategy"/>
+</div>
 
 # About the source code and data sets
 
