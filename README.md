@@ -62,9 +62,17 @@ We compare the performance of the basic method, Nereus, and BiStream. The basic 
 
 <div align=center>
 <img src="https://github.com/shuiying1037/Nereus/blob/main/src/main/resources/throughput-4700032000.png" width="200" height="150" alt="Proportional incremental strategy"/>
-<img src="https://github.com/shuiying1037/Nereus/blob/main/src/main/resources/latency-4700030000.png" width="200" height="150" alt="Proportional incremental strategy"/>
-<img src="https://github.com/shuiying1037/Nereus/blob/main/src/main/resources/throughput-47000.png" width="200" height="150" alt="Proportional incremental strategy"/>
-<img src="https://github.com/shuiying1037/Nereus/blob/main/src/main/resources/latency-47000.png" width="200" height="150" alt="Proportional incremental strategy"/><br/>
+<img src="https://github.com/shuiying1037/Nereus/blob/main/src/main/resources/latency-47000.png" width="200" height="150" alt="Proportional incremental strategy"/>
+<img src="https://github.com/shuiying1037/Nereus/blob/main/src/main/resources/load.png" width="200" height="150" alt="Proportional incremental strategy"/>
+<img src="https://github.com/shuiying1037/Nereus/blob/main/src/main/resources/numPartitions.png" width="200" height="150" alt="Proportional incremental strategy"/><br/>
+</div>
+
+
+<div align=center>
+<img src="https://github.com/shuiying1037/Nereus/blob/main/src/main/resources/latency-onlyModifying-JumpConti-NonMig.png" width="200" height="150" alt="Proportional incremental strategy"/>
+<img src="https://github.com/shuiying1037/Nereus/blob/main/src/main/resources/latency-throughput-numPar.png" width="200" height="150" alt="Proportional incremental strategy"/>
+<img src="https://github.com/shuiying1037/Nereus/blob/main/src/main/resources/parallelism-throughput.png" width="200" height="150" alt="Proportional incremental strategy"/>
+<img src="https://github.com/shuiying1037/Nereus/blob/main/src/main/resources/parallelism-latency.png" width="200" height="150" alt="Proportional incremental strategy"/><br/>
 </div>
  
  
