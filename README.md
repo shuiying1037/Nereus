@@ -32,8 +32,6 @@ We have two insights for the two schemes. First, the disadvantage's influences o
 <img src="https://github.com/shuiying1037/Nereus/blob/main/src/main/resources/migrationSchemes-network-2.jpg" width="600" height="400" alt="Proportional incremental strategy"/>
 </div>
 
-![image](https://user-images.githubusercontent.com/53924951/222683076-32486c22-ac04-4102-8006-23d100244d84.png)
-
 ## Migration Benefit Model
 <div align=center>
 <img src="https://github.com/shuiying1037/Nereus/blob/main/src/main/resources/router-instance.png" width="600" height="400" alt="Proportional incremental strategy"/>
