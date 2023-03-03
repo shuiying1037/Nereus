@@ -30,6 +30,7 @@ We have two insights for the two schemes. First, the disadvantage's influences o
 
 ## Migration Benefit Model
 ![image](https://user-images.githubusercontent.com/53924951/222684293-d09675eb-7cb7-4967-ac88-c598d2f1a919.png)
+
 $B=B_n+B_l$
 
 ## Building Nereus
