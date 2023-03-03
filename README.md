@@ -25,7 +25,7 @@ We have two insights for the two schemes. First, the disadvantage's influences o
 <img src="https://github.com/shuiying1037/Nereus/blob/main/src/main/resources/architecture.emf" width="800" height="600" alt="Proportional incremental strategy"/>
 </div>
 
-
+ 
 # Adaptive Range Partitioning
 ## The four migration operations
 ![image](https://user-images.githubusercontent.com/53924951/222683076-32486c22-ac04-4102-8006-23d100244d84.png)
