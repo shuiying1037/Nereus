@@ -25,7 +25,31 @@ We have two insights for the two schemes. First, the disadvantage's influences o
 
 
 # Adaptive Range Partitioning
+## The four migration operations
+![image](https://user-images.githubusercontent.com/53924951/222683076-32486c22-ac04-4102-8006-23d100244d84.png)
 
+## Migration Benefit Model
+![image](https://user-images.githubusercontent.com/53924951/222684293-d09675eb-7cb7-4967-ac88-c598d2f1a919.png)
+\begin{equation}
+\label{eq:totalB}
+\begin{split}
+B=B_n+B_l
+\end{split}
+\end{equation}
+
+\begin{equation}
+\label{eq:Bn}
+\begin{split}
+B_n=E[T]_n-E[T]_n'
+\end{split}
+\end{equation}
+
+\begin{equation}
+\label{eq:Bl}
+\begin{split}
+B_l=\frac{\lambda_e E[T]_e+\lambda_i E[T]_i}{\lambda_e+\lambda_i}-\frac{\lambda_e'E[T]_e'+\lambda_i'E[T]_i'}{\lambda_e'+\lambda_i'}
+\end{split}
+\end{equation}
 
 ## Building Nereus
 
