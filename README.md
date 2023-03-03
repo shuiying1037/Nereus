@@ -22,7 +22,7 @@ We have two insights for the two schemes. First, the disadvantage's influences o
 
 # Architecture of Nereus
 <div align=center>
-<img src="https://github.com/shuiying1037/Nereus/blob/main/src/main/resources/architecture.emf" width="800" height="600" alt="Proportional incremental strategy"/>
+<img src="https://github.com/shuiying1037/Nereus/blob/main/src/main/resources/architecture.jpg" width="800" height="600" alt="Proportional incremental strategy"/>
 </div>
 
  
