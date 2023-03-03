@@ -16,7 +16,7 @@ For another example, online game platforms match players and ensure that consume
 In these examples of stream join, for each new tuple having a specific value from one stream, the stream join operation finds all of the tuples from another stream within a user specified range. The predicate for stream band join between streams $R$ and $S$ on attributes $R.x$ and $S.x$ is $R.x-c_1\leq S.x \leq R.x+c_2$. The constants $c_1$ and $c_2$ may be equal, and one of the two may be zero. $c_1+c_2$ is the size of the user specified range. The stream band join operation targets at obtaining the pairs of tuples which are separately included in the two streams and have close values. The predicate of stream band join is comparable to that for band join in static relational database. This stream band join processes constantly arriving and highly dynamic data.
 
 # Insight
-To alleviate load imbalance, the stream join processing system can migrate the load among the instances. Emigration and immigration instances represent the instances of emigrating and immigrating load. The immigration instances are divided into adjacent and non-adjacent instances according to whether they have partitions with an adjacent range to the emigration instance. We take the heaviest instance (i.e., the instance with the heaviest load) as the emigration instance, and conclude two kinds of schemes based on the two immigration instances. One kind of migration scheme emigrates part of the partition to the adjacent instance, and then merges the two adjacent partitions. This scheme controls the number of partitions. However, to eliminate the system bottleneck of the heaviest instance, the migration will span multiple instances since the adjacent instances of emigration instance are sometimes under high load (as shown in the mini figure in Fig.~\ref{fig-skew-dynamic-data}). This results in an unacceptably high migration cost for stream processing. Another kind of scheme emigrates part of the load in the partition to the lightest instance (i.e., the instance with the lightest load)~\cite{DBLP:conf/ipdps/fastjoin}, which is usually a non-adjacent instance. This migration only involves two instances, which is a low cost migration scheme compared to the migration scheme for adjacent instance. However, this scheme splits a partition, which makes ordered tuples more discrete. Too many partitions will degrade system performance. However, the stream join system for consumer electronics cannot tolerate high migration cost and the uncontrolled number of partitions.
+To alleviate load imbalance, the stream join processing system can migrate the load among the instances. Emigration and immigration instances represent the instances of emigrating and immigrating load. The immigration instances are divided into adjacent and non-adjacent instances according to whether they have partitions with an adjacent range to the emigration instance. We take the heaviest instance (i.e., the instance with the heaviest load) as the emigration instance, and conclude two kinds of schemes based on the two immigration instances. One kind of migration scheme emigrates part of the partition to the adjacent instance, and then merges the two adjacent partitions. This scheme controls the number of partitions. However, to eliminate the system bottleneck of the heaviest instance, the migration will span multiple instances since the adjacent instances of emigration instance are sometimes under high load. This results in an unacceptably high migration cost for stream processing. Another kind of scheme emigrates part of the load in the partition to the lightest instance (i.e., the instance with the lightest load)}, which is usually a non-adjacent instance. This migration only involves two instances, which is a low cost migration scheme compared to the migration scheme for adjacent instance. However, this scheme splits a partition, which makes ordered tuples more discrete. Too many partitions will degrade system performance. However, the stream join system for consumer electronics cannot tolerate high migration cost and the uncontrolled number of partitions.
 
 We have two insights for the two schemes. First, the disadvantage's influences of the two schemes are related to the current degree of load imbalance and the number of partitions. In fact, these influences are different at any moment. We can utilize this difference to design the most beneficial migration to the system. It is challenging to translate two different metrics of load imbalance and the number of partitions into the same metric. Second, the migration scheme for adjacent instance causes a high migration cost. If the instance has multiple adjacent instances, this migration cost will be reduced. However, the existing schemes cannot make instances own multiple adjacent instances. 
 
@@ -30,26 +30,7 @@ We have two insights for the two schemes. First, the disadvantage's influences o
 
 ## Migration Benefit Model
 ![image](https://user-images.githubusercontent.com/53924951/222684293-d09675eb-7cb7-4967-ac88-c598d2f1a919.png)
-\begin{equation}
-\label{eq:totalB}
-\begin{split}
-B=B_n+B_l
-\end{split}
-\end{equation}
-
-\begin{equation}
-\label{eq:Bn}
-\begin{split}
-B_n=E[T]_n-E[T]_n'
-\end{split}
-\end{equation}
-
-\begin{equation}
-\label{eq:Bl}
-\begin{split}
-B_l=\frac{\lambda_e E[T]_e+\lambda_i E[T]_i}{\lambda_e+\lambda_i}-\frac{\lambda_e'E[T]_e'+\lambda_i'E[T]_i'}{\lambda_e'+\lambda_i'}
-\end{split}
-\end{equation}
+$B=B_n+B_l$
 
 ## Building Nereus
 
