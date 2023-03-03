@@ -79,7 +79,7 @@ We compare the performance of the basic method, Nereus, and BiStream. The basic 
 
 If you want to know more detailed information, please refer to this paper:
 
-Zhiguo Jiang, Hanhua Chen, Hai Jin. Auxo: A Scalable and Efficient Graph Stream Summarization Structure. In Proceedings of the 49th International Conference on Very Large Data Bases (VLDB 2023), Vancouver, Canada, August 28 to September 1, 2023.
+Shuiying Yu, Hanhua Chen, Hai Jin. Nereus: A Distributed Stream Band Join System with Adaptive Range Partitioning. IEEE Transactions on Consumer Electronics 2023.
 
 ## Authors and Copyright
 
